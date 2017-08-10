@@ -10,6 +10,7 @@ Command demo for aws cli.
 
 - Instance Types
 
+  t2.nano   1cpu  0.5G
   t2.micro  1cpu  1G
   t2.small  1cpu  2G
 
