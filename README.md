@@ -16,6 +16,10 @@ Command demo for aws cli.
 
 ## Command Structures
 
-### Create EC2 Instances
+- Create EC2 Instances
 
-`aws ec2 run-instances --image-id ami-xxxxxxxx --count 1 --instance-type t1.micro --key-name MyKeyPair --security-groups my-sg`
+  `aws ec2 run-instances --image-id ami-xxxxxxxx --count 1 --instance-type t1.micro --key-name MyKeyPair --security-groups my-sg`
+
+- Add ingress rules
+
+  `aws ec2 authorize-security-group-ingress --group-name MySecurityGroup --protocol tcp --port 22 --cidr 203.0.113.0/24`
