@@ -23,3 +23,6 @@ Command demo for aws cli.
 - Add ingress rules
 
   `aws ec2 authorize-security-group-ingress --group-name MySecurityGroup --protocol tcp --port 22 --cidr 203.0.113.0/24`
+
+- Get instance information
+  `aws ec2 describe-instances --filters "Name=instance-state-name,Values=running"`
